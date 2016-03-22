@@ -114,12 +114,12 @@ def main():
     generated keys (integers) and takes user's inputs and checks the answers.
     :return:
     """
-    print ("Welcome to Quiz")
+    print ("Let's play Quiz!!")
 
     loadQuiz()  #loading quiz
     totalQuestions = len(ques)
-    num_questions = 3 #int(input("How many questions? (less than " + str(
-        #totalQuestions) + "): "))
+    num_questions = int(input("How many questions? (less than " + str(
+        totalQuestions) + "): "))
     correct = doTheQuiz(totalQuestions, num_questions)
 
     # calculating score percentage
